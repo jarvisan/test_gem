@@ -16,8 +16,8 @@ end
 
 class OutPut
 
-	def consv(ary)
-		puts ary
+	def plain(ary)
+		ary.join(", ")
 	end
 
 	def jsonv(ary)
@@ -25,7 +25,11 @@ class OutPut
 	end
 
 	def htmlv(ary)
-		ary
+		<<-EOF
+			#{ary.map { |d| "<li>#{d}</li>"}.join("\n\t")}
+			</body>
+		</html>
+		EOF
 	end
 end
 
@@ -41,8 +45,8 @@ def main(num, type)
 
 	if(type == "html")
 		out.htmlv(ary)
-	elsif(type === "cons")
-		out.plain(ary)
-	else out.jsonv(ary)
+	elsif(type === "json")
+		out.json(ary)
+	else out.plain(ary)
 	end	
 end
