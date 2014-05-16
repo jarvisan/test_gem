@@ -17,7 +17,7 @@ end
 class OutPut
 
 	def consv(ary)
-		ary
+		puts ary
 	end
 
 	def jsonv(ary)
@@ -39,9 +39,9 @@ def main(num, type)
 
 	out = OutPut.new
 
-	if(type == htmln)
+	if(type == "html")
 		out.htmlv(ary)
-	elsif(type === plain)
+	elsif(type === "cons")
 		out.plain(ary)
 	else out.jsonv(ary)
 	end	
