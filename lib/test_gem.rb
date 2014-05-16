@@ -16,7 +16,7 @@ end
 
 class OutPut
 
-	def plain(ary)
+	def plainv(ary)
 		ary.join(", ")
 	end
 
@@ -46,7 +46,7 @@ def main(num, type)
 	if(type == "html")
 		out.htmlv(ary)
 	elsif(type === "json")
-		out.json(ary)
-	else out.plain(ary)
+		out.jsonv(ary)
+	else out.plainv(ary)
 	end	
 end

@@ -20,15 +20,12 @@ RSpec.describe FizzBuzz do
 	end
 end
 Rspec.describe OutPut do
-	describe '#consv' do
-		it 'returns self' do
-			expect(OutPut.new.consv(20)).to eq(20)
+	describe '#plainv' do
+		it 'returns plain version' do
+			expect(OutPut.new.plainv([20])).to eq("20")
 		end
 		it 'returns json' do
 			expect(OutPut.new.jsonv(20)).to eq(20.to_json)
-		end
-		it 'returns html' do
-			unimplmented
 		end
 	end
 end
