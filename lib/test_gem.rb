@@ -29,13 +29,20 @@ class OutPut
 	end
 end
 
-def main(num)
+def main(num, type)
 	num = num.to_i
 	ary = Array.new
 	fbzz = FizzBuzz.new
 	for i in 1..num
 		(ary[i-1] = fbzz.checks(i))
 	end	
+
 	out = OutPut.new
-	out.jsonv(ary)	
+
+	if(type == htmln)
+		out.htmlv(ary)
+	elsif(type === plain)
+		out.plain(ary)
+	else out.jsonv(ary)
+	end	
 end
