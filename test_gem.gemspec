@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Jarvis"]
   spec.email         = ["Write your email address"]
   spec.summary       = %q{FizzBuzz test gem}
-  spec.description   = %q{A gem that uses sinatra to do the FizzBuzz program}
+  spec.description   = %q{A gem that contains the logic for the FizzBuzz program}
   spec.homepage      = "https://github.com/jarvisan/test_gem"
   spec.license       = "MIT"
 
@@ -19,5 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 0"
+  spec.add_runtime_dependency "json", "~> 0"
 end
