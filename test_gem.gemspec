@@ -6,11 +6,11 @@ require 'test_gem/version'
 Gem::Specification.new do |spec|
   spec.name          = "test_gem"
   spec.version       = TestGem::VERSION
-  spec.authors       = ["Write your name"]
+  spec.authors       = ["Jarvis"]
   spec.email         = ["Write your email address"]
-  spec.summary       = %q{Write a short summary. Required.}
-  spec.description   = %q{Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{FizzBuzz test gem}
+  spec.description   = %q{A gem that uses sinatra to do the FizzBuzz program}
+  spec.homepage      = "https://github.com/jarvisan/test_gem"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
