@@ -1,5 +1,7 @@
 # TestGem
 
+Never deployed, for practice purposes only
+
 This gem takes a number, n, as an upper limit and from 1 to n outputs Fizz if the number is divisible by 3, Buzz if by 5, FizzBuzz if by both or the number itself if neither is true
 
 ## Installation
